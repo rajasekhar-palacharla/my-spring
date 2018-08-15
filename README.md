@@ -1,2 +1,2 @@
 # my-spring
-spring examples 
+Examples for spring boot, angular
