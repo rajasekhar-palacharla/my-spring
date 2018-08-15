@@ -1,0 +1,10 @@
+<div *ngIf="isShowUpload(); then thenBlock else elseBlock"> </div>
+    <ng-template #thenBlock>
+        <image-upload [id] = uid></image-upload>
+    </ng-template>
+    <ng-template #elseBlock>
+    <img [src]="imageToShow"
+     alt="Place image title"
+     *ngIf="!isImageLoading; else noImageFound" style="height:150px; width:150px;">
+    </ng-template>
+
